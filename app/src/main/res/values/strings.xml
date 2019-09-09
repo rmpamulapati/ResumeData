@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Resume Data</string>
+    <string name="professional_summary">PROFESSIONAL SUMMARY</string>
+    <string name="technical_skills">TECHNICAL SKILLS</string>
+    <string name="work_experiences">WORK EXPERIENCES</string>
+    <string name="educational_background">EDUCATIONAL BACKGROUND</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="mani_resume">Manikanta\'s Resume</string>
+
+</resources>

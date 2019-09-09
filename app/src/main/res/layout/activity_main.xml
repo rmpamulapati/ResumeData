@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rootLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBg">
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+    <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter Email id"
+            android:layout_above="@id/input"
+            android:layout_centerHorizontal="true"
+            android:textSize="24dp"
+            android:textColor="@color/black"/>
+    <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="sample@gmail.com"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp"
+            android:layout_marginVertical="6dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/colorWhite"
+            android:layout_centerInParent="true"/>
+    <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            android:textSize="16dp"
+            android:layout_below="@id/input"
+            android:backgroundTint="@color/colorWhite"/>
+    <ProgressBar
+            android:id="@+id/progress_circular"
+            android:visibility="invisible"
+            android:layout_above="@id/text"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

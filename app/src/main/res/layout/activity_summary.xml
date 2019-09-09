@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBg">
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+    <ImageView
+            android:id="@+id/back_button"
+            android:layout_marginLeft="10dp"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="70dp"
+            android:src="@drawable/action_back"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/toolbar">
+
+        <Button
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_details"
+                android:textSize="16dp"
+                android:backgroundTint="@color/colorWhite"
+                android:drawableTop="@drawable/bio"
+                android:drawablePadding="4dp"/>
+
+        <Button
+                android:id="@+id/prof_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/professional_summary"
+                android:textSize="16dp"
+                android:layout_below="@id/details"
+                android:backgroundTint="@color/colorWhite"
+                android:drawableTop="@drawable/professional_summary"
+                android:drawablePadding="4dp"/>
+        <Button
+                android:id="@+id/tech_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/technical_skills"
+                android:textSize="16dp"
+                android:layout_below="@id/prof_summary"
+                android:backgroundTint="@color/colorWhite"
+                android:drawableTop="@drawable/technical_skills"
+                android:drawablePadding="4dp"/>
+        <Button
+                android:id="@+id/work_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tech_skills"
+                android:text="@string/work_experiences"
+                android:textSize="16dp"
+                android:backgroundTint="@color/colorWhite"
+                android:drawableTop="@drawable/work_experience"
+                android:drawablePadding="4dp"/>
+        <Button
+                android:id="@+id/edu_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/educational_background"
+                android:layout_below="@id/work_exp"
+                android:textSize="16dp"
+                android:backgroundTint="@color/colorWhite"
+                android:drawableTop="@drawable/education"
+                android:drawablePadding="4dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
